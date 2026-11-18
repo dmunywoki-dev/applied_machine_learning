@@ -1,0 +1,41 @@
+{
+  "input_object_count": 360,
+  "input_release_count": 360,
+  "input_compiled_snapshot_count": 0,
+  "unique_ocid_count": 180,
+  "process_observation_count": 180,
+  "raw_release_history_processes": 180,
+  "compiled_snapshot_processes": 0,
+  "compiled_only_ocids_excluded_when_raw_release_history_was_present": 0,
+  "input_representation_mode": "raw_release_history",
+  "point_in_time_tender_stage_reconstruction_available": true,
+  "prediction_time_semantics": "first tender-stage release publication timestamp; strict earlier-release history is available",
+  "invalid_ocid_releases": 0,
+  "invalid_publication_date_releases": 0,
+  "duplicate_release_excess": 0,
+  "time_min": "2018-07-01 10:00:00+00:00",
+  "time_max": "2026-05-04 17:00:00+00:00",
+  "tenderer_disclosure_processes_with_2plus": 115,
+  "tenderer_disclosure_rate_2plus": 0.6388888888888888,
+  "conditional_bidder_hypergraph_enabled": true,
+  "field_completeness": {
+    "buyer_id": 1.0,
+    "procurement_method": 1.0,
+    "procurement_category": 1.0,
+    "text": 1.0,
+    "estimated_value": 1.0,
+    "duration_days": 1.0,
+    "num_tenderers": 1.0
+  },
+  "interpretation": "Missing or undisclosed fields indicate data limitations, not misconduct.",
+  "source_files": [
+    {
+      "file": "tender-releases-demo.json",
+      "bytes": 342023,
+      "sha256": "8095f1314f644990625f86ba8dc4c522e4c706f78881e099b17307cdb78ed55f",
+      "object_count": 360,
+      "raw_release_count": 360,
+      "compiled_snapshot_count": 0
+    }
+  ]
+}

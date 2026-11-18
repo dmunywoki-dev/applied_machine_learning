@@ -1,0 +1,1 @@
+`demo_model.joblib` is a synthetic-data artifact for API smoke tests only. A real model should be trained from an audited PPIP/OCDS snapshot and written to `model.joblib`; update `MTHL_MODEL_PATH` accordingly. Never use the synthetic artifact for operational screening.

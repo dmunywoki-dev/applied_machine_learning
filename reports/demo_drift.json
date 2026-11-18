@@ -1,0 +1,106 @@
+{
+  "reference_rows": 180,
+  "current_rows": 180,
+  "feature_results": [
+    {
+      "feature": "estimated_value_log1p",
+      "type": "numeric",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0,
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "duration_days",
+      "type": "numeric",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0,
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "num_tenderers",
+      "type": "numeric",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0,
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "buyer_prior_process_count",
+      "type": "numeric",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0,
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "buyer_prior_supplier_hhi",
+      "type": "numeric",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0,
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "buyer_prior_awarded_process_count",
+      "type": "numeric",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0,
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "days_since_buyer_previous_tender",
+      "type": "numeric",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0,
+      "psi": 0.0,
+      "n_reference": 175,
+      "n_current": 175,
+      "status": "no_alert"
+    },
+    {
+      "feature": "procurement_method",
+      "type": "categorical",
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "procurement_category",
+      "type": "categorical",
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    },
+    {
+      "feature": "tender_status",
+      "type": "categorical",
+      "psi": 0.0,
+      "n_reference": 180,
+      "n_current": 180,
+      "status": "no_alert"
+    }
+  ],
+  "alerts": 0,
+  "thresholds": {
+    "psi_alert": 0.2,
+    "ks_p_value_alert": 0.01
+  },
+  "limitation": "This detects covariate/data drift only. Concept drift and predictive performance require later, valid outcome labels."
+}

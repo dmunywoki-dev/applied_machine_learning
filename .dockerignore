@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+venv
+__pycache__
+.pytest_cache
+*.py[cod]
+data/raw
+data/processed
+reports/*.csv
+reports/*.parquet
+mlruns

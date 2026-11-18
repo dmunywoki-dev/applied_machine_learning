@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mthl-procurement-risk"
+version = "0.1.0"
+description = "Explainable temporal and relational risk prioritisation for Kenyan public procurement OCDS data"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas>=2.1,<3", "numpy>=1.26,<3", "scipy>=1.11", "scikit-learn>=1.4",
+  "joblib>=1.3", "fastapi>=0.110", "uvicorn[standard]>=0.27", "pydantic>=2.6"
+]
+
+[project.scripts]
+mthl = "mthl.cli:main"
+mthl-train = "mthl.train:main"
+mthl-monitor = "mthl.monitor:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

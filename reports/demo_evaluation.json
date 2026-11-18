@@ -1,0 +1,36 @@
+{
+  "project": "MTHL - Explainable Procurement Integrity Risk Prioritisation",
+  "model_type": "IsolationForest",
+  "evaluation_design": "chronological 70/15/15 split; the validation/test periods were excluded from the evaluation fit",
+  "evaluation": {
+    "train_rows": 125,
+    "validation_rows": 28,
+    "test_rows": 27,
+    "holdout_rows_scored": 55,
+    "holdout_score_mean": 0.6990545454545454,
+    "holdout_score_p95": 0.9144,
+    "confirmed_outcome_labels_available": false,
+    "supervised_metrics_reported": false,
+    "mode": "unsupervised_anomaly_prioritisation",
+    "reason": "No independently verified audit/sanction outcome labels were supplied. Unlabelled records are not treated as legitimate negatives."
+  },
+  "final_service_model": {
+    "algorithm": "IsolationForest",
+    "text_encoder": "TF-IDF (word unigrams/bigrams)",
+    "structured_encoder": "median imputation + training-fitted standard scaling + one-hot categories",
+    "random_state": 42,
+    "training_rows": 180,
+    "score_semantics": "empirical anomaly percentile; not a probability of fraud or corruption",
+    "training_mode": "unsupervised_anomaly_prioritisation",
+    "training_snapshot": "demo_procurements.csv",
+    "training_time_min": "2018-07-01 10:00:00+00:00",
+    "training_time_max": "2026-05-04 17:00:00+00:00",
+    "synthetic_data_warning": true
+  },
+  "interpretation": [
+    "The anomaly percentile is a ranking signal, not a probability of fraud, corruption or legal wrongdoing.",
+    "High anomaly scores identify records that differ from the training distribution and need contextual human review.",
+    "No supervised fraud metric is reported without traceable outcome labels and defensible negative examples.",
+    "If the source data are synthetic, the artifact is for integration testing only and must not be used for real procurement decisions."
+  ]
+}

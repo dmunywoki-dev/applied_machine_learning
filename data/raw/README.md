@@ -1,0 +1,1 @@
+Place the original PPIP/OCDS JSON, JSONL, JSONL.GZ or NDJSON export in this folder. Keep an unmodified source copy and record its download date, URL, licence/terms and SHA-256 hash. Raw data are intentionally not committed to version control.
